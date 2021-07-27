@@ -18,7 +18,6 @@ body{
 .main-box{
 	border-top-right-radius: 70%;
 	border-bottom-left-radius: 20%;
-	border-bottom-right-radius: 10%;
 	border-top-left-radius: 10%;
 	width: 100vw;
 	height: 100vh;
@@ -87,11 +86,10 @@ body{
 	margin-left: 200px;
 	width: 55%;
 	height: 100vh;
+	animation: one 0.9s linear 1 4s alternate;
 }
 #main-box1{
-	border-top-right-radius: 10%;
-	
-	border-top-left-radius: 10%;
+	border-top-left-radius: 10%;	
 	width: 100vw;
 	height: 100vh;
 	position: relative;
@@ -104,17 +102,24 @@ body{
 #main-box1 div{
 	width: 20%;
 	height: 100vh;
-	overflow: hidden;
-}
+/*	overflow: hidden;*/}
 #main-box1 img{
+	width: 100%;
+	height: 100%;
+}
+#main-box1 div .imgee{
 	width: 100%;
 	height: 100%;
 }
 #main-box1 .oone{
 	display: none;
 }
-
-
+/* Running Animations in the images. */
+@keyframes one{
+     from{margin-left: 200px;width: 55%;}
+     to{ margin-left: 250px;width: 60%;
+ }
+}
 /* Using media tag*/
 @media(max-width: 700px){
 .mainbox{
@@ -183,15 +188,17 @@ body{
 }
 
 /*For the images.*/
-
 #main-box1{
 	position: relative;
 }
 #main-box1 div{
 	width: 20%;
 	height: 50vh;
-	overflow: hidden;
+	/*overflow: hidden;*/
+}
+#main-box1 div .imgee{
+	height: 100%;
+	width: 100%;
 }
 
-}
 }
