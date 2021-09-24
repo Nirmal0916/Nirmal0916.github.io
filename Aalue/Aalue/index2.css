@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	background: rgba(0,0,0,.1);
+	width: 100%;
+	border: 5px solid green;
+	animation-name: exam;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	position: relative;
+	overflow-x: hidden;
+}
+#box1{
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-right: 20px;
+}
+#box1 .image{
+	width: 55%;
+    border: 5px solid black;
+    height: 74vh;
+    box-shadow: 0 0 60px rgba(0,0,0,.6);
+    overflow: hidden; 
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+#box1,#box2{
+    background-image: url(https://wallpapercave.com/wp/wp2714852.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#box2 h1{
+	font-weight: 500;
+	letter-spacing: 2px;
+	font-size: 4rem;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+
+}
+#box2 h1 span{
+	color: red;
+	animation: happy 3s infinite;
+}
+#box2 .para{
+    font-family: 'Noto Serif', serif;
+    font-size: 25px; 
+    width: 77vw;
+    padding-left: 230px;
+	text-align: justify;   
+	margin-left: 1vw;
+}
+#box2 .para h3{
+	text-align: center;
+	font-size: 20px;
+
+}
+#box2 .para h3 span{
+	color: #ffac1a;
+}
+#box3{
+	width: 100%;
+	height: 150px;
+	border-top: 2px solid black;
+	background: linear-gradient(to right, rgba(255,0,0,.7), orange, yellow)
+}
+#box3 .rate{
+	font-family: cursive;
+	font-size: 15px;
+	font-weight: 800;
+	float: left;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 143px;
+	color: #fff;
+	margin-left: 20px;
+}
+#box3 .creator{
+	float: right;
+	padding: 12px 20px 0 0;
+}
+#box3 .creator h1{
+	font-size: 25px;
+	font-weight: 450;
+	color: black;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#box3 .creator h1 span{
+	color: red;
+}
+#box3 .creator img{
+	width: 90px;
+	height: auto;
+	clip-path: circle(48% at 50% 47%);
+}
+#box3 .creator div{
+	margin-left: 11px;
+}
+#box3 .creator:hover img{
+	transform: scale(1.1);
+}
+@keyframes exam{
+0%   {border: 9px solid red;}
+25%  {border: 9px solid green;}
+50%  {border: 9px solid yellow;}
+100% {border: 9px solid blue;}
+}
+@keyframes happy{
+20% {color: crimson;}	
+50%{ color: orange; }
+100%{ color: blue; }
+}
+
+@media(max-width: 768px){
+/*#box1{
+	width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+}*/
+#box1 .image{
+   width: 75vw;
+    height: auto;
+}
+#box2 h1{
+	font-family: serif;
+	font-weight: 700;
+	font-size: 1.9rem;
+	text-align: center;
+}
+#box2 .para{
+	font-size: 20px;
+	padding-left: 20px;
+	margin-left: 15vw;
+	width: 60vw;
+}
+#box3 .creator{
+	float: right;
+	padding: 0px;
+}
+#box3 .creator h1{
+	display: inline-block;
+}
