@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Bebas+Neue&family=Ephesis&family=Festive&family=Great+Vibes&family=Satisfy&display=swap");
+
+:root {
+  --back1: #5649f2;
+  --text-col: rgba(252, 246, 245, 1);
+}
+/* For the love you
+font-family: 'Great Vibes', cursive;
+font-family: 'Satisfy', cursive;
+for others text.
+font-family: 'Akronim', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Ephesis', cursive;
+font-family: 'Festive', cursive;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-head {
+  background-color: #faf5f5;
+  height: 100vh;
+  position: relative;
+}
+#head {
+  position: absolute;
+  top: 0;
+  background-color: var(--back1);
+  height: 122px;
+  width: 100vw;
+  border-radius: 0 0 0 125px;
+  color: var(--text-col);
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 3px;
+}
+#head .hq {
+  margin: 0 0 0 20px;
+  font-size: 30px;
+}
+#head .hq span {
+  padding-left: 55px;
+}
+
+#head .h {
+  font-size: 27px;
+  float: right;
+  padding: 0 10px 0 0;
+}
+#body {
+  height: 84vh;
+  color: black;
+  overflow: scroll;
+}
+#body .para {
+  padding-top: 123px;
+  text-align: justify;
+}
+#foot {
+  position: absolute;
+  color: var(--text-col);
+  bottom: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: var(--back1);
+  border-radius: 0 125px 0 0;
+  font-family: "Akronim", cursive;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 70px;
+}
+#foot span {
+  color: red;
+}
+/* For the button. */
+.but {
+  margin-left: 35%;
+}
+button {
+  width: 115px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 20px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+a {
+  text-decoration: none;
+}
