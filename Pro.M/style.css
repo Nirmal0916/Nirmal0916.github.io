@@ -22,6 +22,7 @@ font-family: 'Festive', cursive;
   background-color: #faf5f5;
   height: 100vh;
   position: relative;
+  width: 100vw;
 }
 #head {
   position: absolute;
@@ -48,13 +49,16 @@ font-family: 'Festive', cursive;
   padding: 0 10px 0 0;
 }
 #body {
-  height: 84vh;
+  height: 85vh;
   color: black;
   overflow: scroll;
 }
 #body .para {
   padding-top: 123px;
   text-align: justify;
+}
+#body .para span {
+  color: red;
 }
 #foot {
   position: absolute;
@@ -126,4 +130,24 @@ button:active {
 }
 a {
   text-decoration: none;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
