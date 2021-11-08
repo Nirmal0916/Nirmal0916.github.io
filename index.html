@@ -1,42 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<title>HappyBirtdayMyFriend</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="index2.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body>
-<section id="box1">
-	<div class="image">
-		<img src="birthday10.png">
-	</div>
-</section>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<section id="box2">
+		<title>reveal.js</title>
 
-<h1>HA<span>PP</span>Y BIRTH<span>DAY</span>
-<br><span>DU</span>DE</h1>	
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="index.css">
 
-<div class="para">
-	You are the most wonderful friend, I ever got in my entire life. You are like a big brother to me but this doesn't mean that I will call you "dai" or "dada". Jokes apart, let me wish you a happy birthday and many many happy returns of the day. I know god will bless you cause you are my friend and you, try to live a happy life. I only know this wishes but I would like to tell you that your small impact have changed my thinking and even life for good. And thank you for that.Be happy! Today is the day you were brought into this world to be a blessing and inspiration to the people around you! You are a wonderful person! May you be given more birthdays to fulfill all of your dreams!”. Also don't forget that you have a friend who can help you in times of need. A friend like you is more priceless than the most beautiful diamond. You are not only strong and wise, but kind and thoughtful as well. Your birthday is the perfect opportunity to show you how much I care and how grateful I am to have you in my life. Happy birthday!” And just try to ignore if you don't like the design cause you know your friend is not good at it.
-	<h3>Tha<span>nk Yo</span>u!!</h3>
-</div>
-</section>
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+					<section>
+						<section>vertical</section>
+						<section>vert</section>
+					</section> 
+				
+				<section>Slide 2</section>
+				<section>NO.3</section>
+				<section>No.4</section>
 
-<section id="box3">
- <!-- <div class="rate">
- 	<h1>Hope <br> you <br> liked <br>it!</h1>
+				<section class="pgmain">
+					<section>Pg.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur minus cum maxime eius tenetur voluptatum blanditiis aperiam harum! Sed, libero saepe! Ipsam necessitatibus rem, accusamus quibusdam corrupti blanditiis adipisci.</section>
+					<section>Pg.2</section>
+					<section>Pg.3</section>
+				</section>
+			</div>
+		</div>
 
- </div>	 -->
- <div class="creator">
- 	<h1>Know a<span>bout</span> ME!</h1>
- 	<div>
-    <a target="_blank" href="https://www.facebook.com/nishan.basnet.33449/"><img src="download.png"></a> 
-    </div>
- </div>
-</section>
-</body>
+
+
+<!-- Only the above one is important!! -->
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				controlsTutorial: true,
+				slideNumber: true ,
+				autoAnimate: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>

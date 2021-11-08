@@ -1,0 +1,9 @@
+* {
+  background-color: red;
+}
+.pgmain {
+  color: aqua;
+  float: right;
+  background-color: red;
+  width: 100%;
+}
