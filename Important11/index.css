@@ -1,0 +1,18 @@
+/* * {
+  background-color: white; */
+}
+.pgmain {
+  color: aqua;
+  float: right;
+  background-color: red;
+  width: 100%;
+}
+.heads{
+  position: relative;
+}
+.heads span{
+  color: green;
+  position: absolute;
+  top: 140%;
+  left: 33%;;
+}
